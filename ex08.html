@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 8</title>
+</head>
+<body>
+<script>
+    let startRange = +prompt("Nhập số bắt đầu khoảng:")
+    let endRange = +prompt("Nhập số kết thúc khoảng:")
+    for (i=startRange;i<=endRange;i++){
+        let random = Math.random(1)*i;
+        let chose = +prompt("Nhập số đoán:");
+        if (chose === random){
+            alert("Hack ah?")
+        }
+        else alert("Lần sau nhá")
+    }
+</script>
+</body>
+</html>

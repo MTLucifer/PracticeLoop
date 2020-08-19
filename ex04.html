@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 4</title>
+</head>
+<body>
+<span id="show"></span>
+<script>
+    let f1 = 0;
+    let f2 = 1;
+    for ( i = 1; i <=20 ; i++) {
+        document.getElementById('show').innerHTML += f1 + " "
+        f = f1 + f2;
+        f1 = f2;
+        f2 = f
+        if (f1%5===0){
+            alert(f1)
+        }
+    }
+</script>
+</body>
+</html>
